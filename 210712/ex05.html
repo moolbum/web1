@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>예제05</title>
+</head>
+<body>
+    <!-- <script> //논리연산자 && 모두 true 상태에 실행
+        var id = prompt('아이디를 입력해주세요');
+        var password = prompt('비밀번호를 입력해주세요.');
+        if(id == 'dyddn' && password === '111111'){
+            alert('로그인 하셨습니다.'+id+'님 반갑습니다.');
+        } else {
+            alert('아이디가 일치하지 않습니다.');
+        }
+    </script> -->
+
+    <script> //or연산자 ||  하나라도 true 실행
+        var id = prompt('아이디를 입력해주세요.');
+        var password = prompt('비밀번호를 입력해주세요.');
+        if((id==='dyddn' || id==='ddd' || id=='lyw') && password==='111111'){
+            alert('인증 했습니다.');
+        } else {
+            alert('인증에 실패했습니다.');
+        }
+    </script>
+</body>
+</html>
