@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>예제06</title>
+</head>
+<body>
+    <script>
+        var circle = {
+            radius: 5,
+            getDiameter: function(){
+                return 2 * this.radius;
+            }
+        };
+        console.log(circle.getDiameter());
+    </script>
+    <script>
+        var person = {
+            name: 'Lee'
+        };
+        console.log(person);
+        console.log(person.name);
+        console.log(person['name']);
+    </script>
+    <script>
+        // 프로퍼티 값 갱신
+        var person = {
+            name: 'Lee'
+        };
+        person.name = 'Kim';
+        console.log(person);
+    </script>
+    <script>
+        // 프로퍼티 동적 생성
+        var person = {
+            name: 'Lee'
+        };
+        person.age = 20;
+        console.log(person);
+    </script>
+    <script>
+        var person = {
+            name: 'Kim',
+        };
+        person.age = 28;
+        delete person.age;
+        console.log(person);
+    </script>
+    <script>
+        let x = 1, y = 2;
+        const obj = { x, y };
+
+        console.log(obj);
+    </script>
+</body>
+</html>

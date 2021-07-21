@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>예제05</title>
+</head>
+<body>
+    <script>
+        var person = {
+            name: 'Lee',
+            sayHello: function(){
+                console.log('Hello! My name is ${this.name}.');
+            }
+        };
+        console.log(typeof person);
+        console.log(person);
+
+        var empty = {};
+        console.log(typeof empty); //빈 객체
+    </script>
+    <script>
+        var my = {
+            name: 'Leeyongwoo',
+            age: 28
+        };
+        console.log(typeof my);
+        console.log(my);
+    </script>
+
+    <script>
+        var her = {
+            name: 'kim',
+            name: 'sae'
+        };
+        console.log(her);
+    </script>
+
+    <!-- 빈 문자열로 프로퍼티 값 사용 하지만 키로서의 의미가 없어 권장하지 않는다 -->
+    <!-- <script>
+        var obj = {};
+        var key = 'hello';
+
+        obj[key] = 'world';
+        console.log(obj);
+    </script> -->
+</body>
+</html>
