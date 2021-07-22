@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>예제02</title>
+    </head>
+    <body>
+        <script>
+            const o = {x: {y: 1}};
+            const c1 = {...o};
+            console.log(c1 === o);
+            console.log(c1.x === o.x);
+        </script>
+
+        <script>
+            const v = 1;
+            const c2 = v;
+            console.log(c2 === v);
+
+            const a = { x: 1};
+            const b = {a};
+            console.log(a === b);
+        </script>
+    </body>
+</html>

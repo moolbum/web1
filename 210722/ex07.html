@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>에제07</title>
+</head>
+<body>
+    <script>
+        function outer(){
+            var x = 1;
+            // 중첩함수
+            function inner(){
+                var y = 2;
+                console.log(x + y);
+            }
+            inner();
+        }
+        outer();
+    </script>
+    <script>
+        // 콜백함수
+        function repeat(n){
+            for(var i = 0; i < n; i++){
+                document.write(i);
+            }
+        }
+        repeat(10);
+    </script>
+</body>
+</html>

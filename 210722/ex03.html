@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>예제03</title>
+</head>
+<body>
+    <script>
+        function add(x, y){
+            return x + y;
+        }
+        console.log(add(2, 5));
+
+        var result = add(2, 5);
+        console.log(result);
+    </script>
+    <script>
+        // ES6 추가된 화살표 함수
+        var add = (x, y) => x + y;
+        console.log(add(10,5));
+    </script>
+    <script>
+        // 함수표현식은 함수이름을 생략하는게 일반적
+        var add = function(x, y){
+            return x + y;
+        }
+        console.log(add(20, 20));
+    </script>
+</body>
+</html>
