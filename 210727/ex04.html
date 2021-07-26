@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>예제04</title>
+    </head>
+    <body>
+        <script>
+            function foo(){
+                console.log('global function foo');
+            }   function bar(){
+                function foo(){
+                    console.log('local function foo');
+                }
+                foo();
+            }
+            bar();
+        </script>
+    </body>
+</html>

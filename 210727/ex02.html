@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>예제02</title>
+</head>
+<body>
+    <script>
+        // var x = 'global';
+        // function foo(){
+        //     var x = 'local';
+        //     console.log(x);
+        // }
+        // foo();
+        // console.log(x);
+
+        const x = 'global';
+        function foo(){
+            const x = 'local';
+            console.log(x);
+        }
+        foo();
+        console.log(x);
+    </script>
+</body>
+</html>
