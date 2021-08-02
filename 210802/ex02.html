@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>예제02</title>
+</head>
+<body>
+    <script>
+        function Circle(radius){
+            this.radius = radius;
+            this.getDiameter = function(){
+                return 2 * this.radius;
+            };
+        }
+        const circle1 = new Circle(5);
+        const circle2 = new Circle(20);
+        const circle3 = new Circle(10);
+
+        console.log(circle1);
+        console.log(circle2);
+        console.log(circle3);
+    </script>
+</body>
+</html>

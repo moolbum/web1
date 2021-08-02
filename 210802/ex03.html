@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>예제03</title>
+</head>
+<body>
+    <script>
+        function foo(){}
+        foo.prop = 10;
+        foo.method = function(){
+            console.log(this.prop);
+        };
+        foo.method();
+    </script>
+    <script>
+        function foo(){}
+        const lee = function(){};
+        const kim = {
+            x: function(){}
+        };
+        const arrow = () => {};
+        const obj = {
+            x(){}
+        };
+    </script>
+</body>
+</html>
