@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko"?>
+<head>
+    <meta charset="utf-8">
+    <title>예제02</title>
+</head>
+<body>
+    <script>
+        const person = {
+            name: 'Lee'
+        };
+        console.log(person);
+        
+        // const obj = {};
+        // const parent = {
+        //     x: 1
+        // };
+        // obj.__proto__;
+        // obj.__proto__ = parent;
+        // console.log(obj);
+    </script>
+    <script>
+       const obj = Object.create(null);
+       console.log(obj.__proto__);
+       console.log(Object.getPrototypeOf(obj));
+    </script>
+    <script>
+        const obj1 = {};
+        const parent = { x: 1};
+
+        Object.getPrototypeOf(obj);
+        Object.setPrototypeOf(obj, parent);
+        console.log(obj.x);
+    </script>
+</body>
+</html>

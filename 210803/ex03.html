@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>예제03</title>
+    </head>
+    <body>
+        <script>
+            function Person(name){
+                this.name = name;
+            }
+            const me = new Person('Lee');
+            console.log(Person.prototype === me.__proto__);
+            console.log(Person);
+        </script>
+    </body>
+</html>
