@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>예제01</title>
+    </head>
+    <body>
+        <script>
+            const strObj = new String('Lee');
+            console.log(typeof strObj);
+            console.log(strObj);
+
+            const numObj = new Number(123);
+            console.log(typeof numObj);
+            console.log(numObj);
+
+            const boolObj = new Boolean(true);
+            console.log(typeof boolObj);
+            console.log(boolObj);
+        </script>
+        <script>
+            const func = new Function('x', 'return x * x');
+            console.log(typeof func);
+            console.log(func);
+
+            const arr = new RegExp(/ab+c/i);
+            console.log(typeof arr);
+            console.log(arr);
+
+            const date = new Date();
+            console.log(typeof date);
+            console.log(date);
+        </script>
+    </body>
+</html>

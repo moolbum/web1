@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>예제02</title>
+</head>
+<body>
+    <script>
+        // 변수를 선언하지않은 암묵적 전역. 전역객체다
+        people = 10;
+        console.log(window.people);
+
+        // var 전역 변수
+        var num = 2;
+        console.log(window.num);
+        
+        //const 전역 변수
+       const foo = 1;
+       console.log(window.foo); 
+
+        //전역함수
+        function baz(){return 3;}
+        console.log(window.baz());
+    </script>
+</body>
+</html>

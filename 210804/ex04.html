@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>예제04</title>
+</head>
+<body>
+    <script>
+        console.log(this);
+
+        function square(number){
+            console.log(this);
+            return number * number;
+        }
+        square(2);
+    </script>
+    <script>
+        const person = {
+            name: 'Lee',
+            getName(){
+                console.log(this);
+                return this.name;
+            }
+        };
+        console.log(person.getName);
+
+        function Person(name){
+            this.name;
+            console.log(this);
+        }
+        const me = new Person('Lee');
+    </script>
+</body>
+</html>
