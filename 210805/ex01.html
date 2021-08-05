@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>예제01</title>
+</head>
+<body>
+    <!-- <script>
+        function foo(){
+            'user strict';     
+        
+            console.log("foo's this: ", this);
+            function bar(){
+                console.log("bar's this ", this);
+            }
+            bar();
+        }
+        foo();
+    </script> -->
+    <script>
+        var value = 1;
+        
+        const obj = {
+            value: 100,
+            foo(){
+                console.log("foo's this: ", this);
+                console.log("foo's this.value: ", this.value);
+            
+                function bar(){
+                    console.log("bar's this: ", this);
+                    console.log("bar's this.value: ", this.value);
+                }
+            bar();
+            }
+        };
+        obj.foo();
+
+    </script>
+</body>
+</html>
