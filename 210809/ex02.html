@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>예제02</title>
+</head>
+<body>
+    <script>
+        const x = 1;
+
+        function foo(){
+            const x = 10;
+            function bar(){
+                console.log(x);
+            }
+            bar();
+        }
+        foo();
+    </script>
+</body>
+</html>
