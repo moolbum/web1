@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>예제02</title>
+</head>
+<body>
+    <script>
+        // 클래스는 생성자함수이다.
+        // 생성자함수는 첫문자를 대문자로 한다.
+        class Person {}
+        // typeof 타입확인 함수
+        console.log(typeof Person);
+    </script>
+    <script>
+        class People {}
+        const me = new People('Lee');
+        console.log(me);
+    </script>
+    <script>
+        class Foo {
+            constructor(name){
+                this.name = name;
+            }
+        }
+        const mi = new Foo('Lee');
+        console.log(mi);
+    </script>
+</body>
+</html>

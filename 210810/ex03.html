@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>예제03</title>
+</head>
+<body>
+    <script>
+       class Person {
+           constructor(){
+               this.name = 'Lee';
+               this.address = 'Seoul'
+           }
+       }
+       const me = new Person();
+       console.log(me);
+    </script>
+    
+    <script>
+        class Example {
+            constructor(name, address){
+                this.name = name;
+                this.address = address;
+            }
+        }
+        const ex = new Example('Lee', 'Seoul');
+        console.log(ex);
+    </script>
+</body>
+</html>
