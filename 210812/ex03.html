@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>예제03</title>
+</head>
+<body>
+    <script>
+        const mySymbol = Symbol();
+        console.log(typeof mySymbol);
+
+        // 심벌 값은 외부로 노출되지 않아 확인할 수 없다
+        console.log(mySymbol);
+    </script>
+    <script>
+        const mySymbol1 = Symbol('mySymbol');
+        const mySymbol2 = Symbol('mySymbol');
+        console.log(mySymbol1 === mySymbol2);
+    </script>
+</body>
+</html>
