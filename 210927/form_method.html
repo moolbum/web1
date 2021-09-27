@@ -1,0 +1,22 @@
+<DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>method</title>
+</head>
+<body>
+    <!--
+
+    서버에 정보를 전달할 방법 : method
+    get : url 전달방법 (기본값)
+    post : 정보를 숨겨서 전달 (form태그 사용시 대부분 사용)
+           프론트엔드라면 서버관리자가 원하는 전달방법으로 전달
+           
+    -->
+    <form action="http://localhost/method.php" method="POST">
+        <input type="text" name="id">
+        <input type="password" name="pwd">
+        <input type="submit">
+    </form>
+</body>
+</html>
