@@ -1,0 +1,82 @@
+ /* .wrapper{  
+    display: flex;
+    flex-direction: row;
+     main Axis를 위한 요소
+    1. flex-direction: (row) 기본값
+    2. flex-direction: row 일 때 main Axis는 가로 (justify-content)
+    3. flex-direction: row 일 때 cross Axis는 세로  (align-items)
+    4. flex-wrap: (nowrap) 기본값 : 화면이 줄어들어도 같은 줄에 유지
+    5. align-content: (space-around) 기본값 : cross Axis의 여백길이
+     justify-content: start;
+    align-items: flex-start;
+    height: 100vh;
+}  */
+
+.father{  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+.box {
+    /* width: 200px; */
+    flex-basis: 50%;
+    height: 200px;
+    background: orange;
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* align-self 
+    cross Axis 인 align을 부모요소가 아니라 자식요소에 직접 부여
+
+.box:nth-child(2){
+    align-self: flex-end;
+}
+.box:nth-child(3){
+    align-self: center;
+} */
+
+
+/* order로 자식 순서바꾸기
+     HTML 을 수정하기 힘들때
+    기본값 = 0 , 숫자가 클수록 뒤로 배치
+
+.box:nth-child(1){
+    order: 2;
+}
+.box:nth-child(2){
+    order: 3; 
+} */
+
+
+
+/* flex-shrink로 자식들이 줄어들 양 정하기
+flex-shrink: 1 = 기본값; 
+값이 높을수록 다들 자식들보다 숫자의 배수만큼 줄어듬 */
+
+/* .box:nth-child(4){
+    background: black;
+    flex-shrink: 1;
+} */
+
+
+
+/* flex-grow로 자식들이 커지는 양 정하기 : flex-shrink와 반대 
+flex-grow: 0 = 기본값; 
+여백의 크기를 이용해서 커짐, 줄어들면 다른 자식들과 동일한 크기로 줄어듬  */
+
+.box:nth-child(3){
+    background: black;
+    flex-grow: 1;
+}
+.box:nth-child(2){
+    background: violet;
+    flex-grow: 1;
+}
