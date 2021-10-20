@@ -1,0 +1,22 @@
+.grid{
+    display: grid;
+    height: 100vh;
+    gap: 10px;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+}
+.header {
+    background: #2ecc71;
+/*  align-self: end;
+    justify-self: center;  */
+    place-self: end center;
+}
+.content {
+    background: #3496db;
+}
+.nav {
+    background: #8e44ad;
+}
+.footer {
+    background: #f39c12;
+}

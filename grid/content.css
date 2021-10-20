@@ -1,0 +1,17 @@
+.grid{
+    display: grid;
+    gap: 10px;
+    height: 100px;
+    /* max-content : 그리드 영역 안의 컨텐츠 길이만큼 늘여준다 */
+    /* min-content : 그리드 영역 안의 컨텐츠의 최솟값으로 줄여준다 */
+    grid-template-columns: repeat(2, minmax(max-content, 1fr));
+    grid-auto-rows: 100px;
+    margin-bottom: 30px;
+}
+
+.item:nth-child(odd){
+    background-color: #2ecc71;
+}
+.item:nth-child(even){
+    background-color: #3498db;
+}

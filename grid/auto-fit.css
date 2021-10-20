@@ -1,0 +1,15 @@
+.grid{
+    display: grid;
+    gap: 10px;
+    height: 100px;
+    /* auto-fill = 최대한 column을 만든다  / 정확한 사이즈*/
+    /* auto-fit = row에 맞게 늘린다  / 유동적인 사이즈*/ 
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.item:nth-child(odd){
+    background-color: #2ecc71;
+}
+.item:nth-child(even){
+    background-color: #3498db;
+}
